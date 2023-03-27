@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.0...v1.3.1) (2023-03-27)
+
+
+### Bug Fixes
+
+* **module:** Error-Missing resource instance key for sg ([bc77b78](https://github.com/signorrayan/aws-ec2-terraform-module/commit/bc77b787d2be50550f8252a761dcfb028378fc50))
+
 # [1.3.0](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.2.1...v1.3.0) (2023-03-27)
 
 
