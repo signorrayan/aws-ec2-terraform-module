@@ -43,3 +43,31 @@ resource "aws_iam_instance_profile" "server" {
   }
 }
 
+
+resource "aws_security_group" "sg_server" {
+  description = "A security group to allow all output traffic."
+
+  count = var.create_sg ? 1 : 0
+
+  name_prefix = "sg_server_"
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_security_group" "sg_ssh" {
+  description = "A security group to allow ssh on port 22."
+
+  count = var.create_sg ? 1 : 0
+
+  name_prefix = "sg_ssh_"
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
