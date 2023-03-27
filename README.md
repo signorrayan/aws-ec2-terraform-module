@@ -19,7 +19,8 @@ _____
 - In this file I defined the main structure of Terraform script which:
   - Will create one or more EC2 instances. (default number of instances (`instance_count`) to create is set to 1, and the default `environment` is set to 'test'. So you can change them by defining these variables.)
   - Will create an IAM role, and an IAM instance profile. (An instance profile is a container for an IAM role that we can use to pass role information to an EC2 instance when the instance starts, that's why I defined an `aws_iam_instance_profile`)
-  - Will create two security groups to allow all output traffic and allow incoming ssh connections on port 22 if variable `create_sg` is set to `true` . the default value for `create_sg` is false, so if you want to create these security groups, define it in tfvars and set it to `true`.
+  - Will create two security groups to allow outgoing traffic and allow incoming ssh connections on port 22 if variable `create_sg` is set to `true` . the default value for `create_sg` is false, so if you want to create these security groups, define it in tfvars and set it to `true`.
+    - (**Note:** even if the `create_sg` is set to **false**, the AWS will create these two security groups by default, and these two security groups in the Terraform code are just a sample, so you can change them.)
 
 _____
 ## How to set-up to run on your environment and AWS:
@@ -32,3 +33,9 @@ _____
    terraform plan
    terraform apply
     ```
+   
+
+____
+## Sample output, after creating the instance:
+\
+![alt Output](assets/outputs.png)
