@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.2.0...v1.2.1) (2023-03-27)
+
+
+### Bug Fixes
+
+* **module:** add data.tf for aws_ami, aws_partition, aws_iam_policy_document ([55f9a76](https://github.com/signorrayan/aws-ec2-terraform-module/commit/55f9a76c1177482afb74a1fde3d828da7b99a780))
+
 # [1.2.0](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.1.0...v1.2.0) (2023-03-27)
 
 
