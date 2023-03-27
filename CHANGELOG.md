@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.2.1...v1.3.0) (2023-03-27)
+
+
+### Features
+
+* **module:** add outputs.tf to show the final information ([e409ecb](https://github.com/signorrayan/aws-ec2-terraform-module/commit/e409ecb7840643382540116f55fbdce9b2a1aebe))
+
 ## [1.2.1](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.2.0...v1.2.1) (2023-03-27)
 
 
