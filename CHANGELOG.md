@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.1.0...v1.2.0) (2023-03-27)
+
+
+### Features
+
+* **module:** add security groups to allow outgoing traffic and ssh ([2a51a91](https://github.com/signorrayan/aws-ec2-terraform-module/commit/2a51a917d9fd05ab1777dc121b1ee772e7eece47))
+
 # [1.1.0](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.0.0...v1.1.0) (2023-03-27)
 
 
