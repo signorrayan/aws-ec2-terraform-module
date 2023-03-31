@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.1...v1.3.2) (2023-03-31)
+
+
+### Bug Fixes
+
+* **module:** Fix attaching the security group ids to the ec2 instance. ([d9a720c](https://github.com/signorrayan/aws-ec2-terraform-module/commit/d9a720c75cc6cf582afee76b8b54f7b83ae10166))
+
 ## [1.3.1](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.0...v1.3.1) (2023-03-27)
 
 
