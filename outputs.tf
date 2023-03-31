@@ -59,3 +59,7 @@ output "iam_role_unique_id" {
   description = "Stable and unique string identifying the IAM role"
   value       = try([for srv in aws_iam_role.server : srv.unique_id], null)
 }
+
+output "security_gruops" {
+  value = try({for srv in aws_instance.server : srv.tags.Name => srv.vpc_security_group_ids}, "")
+}
