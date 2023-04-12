@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.2...v1.3.3) (2023-04-12)
+
+
+### Bug Fixes
+
+* **module:** Fix the instance naming issues, and change the instance_id to id ([85eb991](https://github.com/signorrayan/aws-ec2-terraform-module/commit/85eb9918a00e22c021c184e61957df84babee99e))
+
 ## [1.3.2](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.1...v1.3.2) (2023-03-31)
 
 
