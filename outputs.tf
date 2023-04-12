@@ -1,4 +1,4 @@
-output "instance_id" {
+output "id" {
   description = "The ID of the instance"
   value       = try({ for srv in aws_instance.server : srv.tags.Name => srv.id }, "")
 }
