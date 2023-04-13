@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.3...v1.3.4) (2023-04-13)
+
+
+### Bug Fixes
+
+* **module:** Remove the providers.tf to be usable as a module. ([da85356](https://github.com/signorrayan/aws-ec2-terraform-module/commit/da8535673c21452e2388448ef0599a6fc99de3cc))
+
 ## [1.3.3](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.2...v1.3.3) (2023-04-12)
 
 
