@@ -9,7 +9,7 @@ resource "aws_instance" "server" {
   key_name               = var.key_name
   availability_zone      = var.availability_zone
   subnet_id              = var.subnet_id
-  vpc_security_group_ids = try(coalesce([aws_security_group.sg_ssh[0].id, aws_security_group.sg_server_outgoing[0].id], var.vpc_security_group_ids), null)
+  vpc_security_group_ids = var.vpc_security_group_ids
   iam_instance_profile   = var.create_iam_instance_profile ? aws_iam_instance_profile.server[0].name : var.iam_instance_profile
   tags = {
     Name = "${var.name}-${index(local.instance_names, each.key) + 1}"
