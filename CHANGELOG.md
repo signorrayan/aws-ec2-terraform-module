@@ -3,6 +3,14 @@
 
 ### Bug Fixes
 
+* **module:** Fix the vpc_security_group_ids issue to assign it correctly. ([a6c62f1](https://github.com/signorrayan/aws-ec2-terraform-module/commit/a6c62f18373692e352f37f31cb1667a63fd21f6a))
+* **module:** Fix the vpc_security_group_ids issue to assign it correctly. ([2808f1d](https://github.com/signorrayan/aws-ec2-terraform-module/commit/2808f1de3ead261a46a45ee85de9fa129fe12863))
+
+## [1.3.5](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.4...v1.3.5) (2023-04-13)
+
+
+### Bug Fixes
+
 * **module:** Fix the vpc_security_group_ids issue to assign it correctly. ([2808f1d](https://github.com/signorrayan/aws-ec2-terraform-module/commit/2808f1de3ead261a46a45ee85de9fa129fe12863))
 
 ## [1.3.4](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.3...v1.3.4) (2023-04-13)
