@@ -58,6 +58,7 @@ resource "aws_security_group" "sg_server_outgoing" {
   }
 }
 
+
 resource "aws_security_group" "sg_ssh" {
   description = "A security group to allow ssh on port 22."
 
