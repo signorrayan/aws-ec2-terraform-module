@@ -22,6 +22,12 @@ variable "key_name" {
   default     = null
 }
 
+variable "user_data" {
+  description = "The user data to provide when launching the instance. (Do not pass gzip-compressed data via this argument)"
+  type        = string
+  default     = null
+}
+
 variable "create" {
   description = "Whether to create an instance or not"
   type        = bool

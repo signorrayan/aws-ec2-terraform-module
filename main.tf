@@ -7,6 +7,7 @@ resource "aws_instance" "server" {
   cpu_core_count         = var.cpu_core_count
   cpu_threads_per_core   = var.cpu_threads_per_core
   key_name               = var.key_name
+  user_data              = var.user_data
   availability_zone      = var.availability_zone
   subnet_id              = var.subnet_id
   vpc_security_group_ids = var.vpc_security_group_ids
