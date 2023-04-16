@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.5...v1.3.6) (2023-04-16)
+
+
+### Bug Fixes
+
+* **module:** Add user_data argument to the aws_instance. ([d006555](https://github.com/signorrayan/aws-ec2-terraform-module/commit/d0065554b74fe062f4d06d8bebffd3160b62c785))
+
 ## [1.3.5](https://github.com/signorrayan/aws-ec2-terraform-module/compare/v1.3.4...v1.3.5) (2023-04-13)
 
 
