@@ -2,6 +2,22 @@
 
 This is a sample of AWS EC2 Terraform module.
 
+
+## How to use this repository as a module in your IaC?
+```terraform
+module "ec2_public" {
+  source = "git::https://github.com/signorrayan/aws-ec2-terraform-module.git?ref=v1.3.6" #Always try to use the latest vesrion
+
+  # Insert the required variables here
+  name                   = "${var.environment}-BastionHost"
+  ami                    = data.aws_ami.ubuntu.id
+  instance_type          = var.instance_type
+  key_name               = var.instance_keypair
+  subnet_id              = var.public_subnets
+  vpc_security_group_ids = [var.security_group_id]
+  instance_count         = 3
+}
+```
 _____
 ## An overview of Terraform files:
 
