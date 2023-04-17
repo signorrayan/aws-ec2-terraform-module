@@ -60,6 +60,6 @@ output "iam_role_unique_id" {
   value       = try([for srv in aws_iam_role.server : srv.unique_id], null)
 }
 
-output "security_gruops" {
+output "security_groups" {
   value = try({for srv in aws_instance.server : srv.tags.Name => srv.vpc_security_group_ids}, "")
 }
